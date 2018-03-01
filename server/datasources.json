@@ -2,5 +2,21 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "MongoDs": {
+    "host": "",
+    "port": 0,
+    "url": "",
+    "database": "ocvn",
+    "password": "",
+    "name": "MongoDs",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "Storage": {
+    "name": "Storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./files"
   }
 }

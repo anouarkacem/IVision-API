@@ -1,0 +1,30 @@
+{
+  "name": "Container",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "size": {
+      "type": "number"
+    },
+    "atime": {
+      "type": "date"
+    },
+    "ctime": {
+      "type": "date"
+    },
+    "mtime": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,28 @@
+version: '3'
+services:
+  imp:
+    build: .
+    image: imp
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    networks:
+      app-net:
+    env_file: .env.docker
+  db:
+    image: aashreys/mongo-auth:latest
+    restart: always
+    volumes:
+      - mongo-data-volume:/data/db
+    env_file: .env.docker
+    ports:
+      - "21984:27017"
+    networks:
+      app-net:
+networks:
+  app-net:
+    driver: bridge
+volumes:
+  mongo-data-volume:

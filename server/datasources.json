@@ -4,13 +4,13 @@
     "connector": "memory"
   },
   "MongoDs": {
-    "host": "",
-    "port": 0,
+    "host": "db",
+    "port": 27017,
     "url": "",
     "database": "ocvn",
-    "password": "",
+    "password": "admin",
     "name": "MongoDs",
-    "user": "",
+    "user": "admin",
     "connector": "mongodb"
   },
   "Storage": {

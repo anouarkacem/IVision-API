@@ -1,5 +1,10 @@
 {
   "loopback-component-explorer": {
-    "mountPath": "/explorer"
+    "mountPath": "/explorer",
+    "uiDirs": ["server/explorer"],
+    "apiInfo": {
+      "title": "IVision API",
+      "description": "Image Manopulation & Computed Vision API"
+    }
   }
 }

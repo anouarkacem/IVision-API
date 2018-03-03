@@ -19,3 +19,4 @@ node_modules
 npm-debug.log
 .env.docker
 files/*
+package-lock.json

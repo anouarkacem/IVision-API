@@ -38,5 +38,9 @@
   "Container": {
     "dataSource": "Storage",
     "public": true
+  },
+  "Face": {
+    "dataSource": "MongoDs",
+    "public": true
   }
 }

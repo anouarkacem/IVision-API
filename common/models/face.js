@@ -90,13 +90,13 @@ function detect(file) {
         // Read image from the given path and return it
         cv.readImage(filePath, function(err, im) {
 
-            if (err) throw err;
-            if (im.width() < 1 || im.height() < 1) throw new Error('Image has no size');
+            if (err) reject(err);
+            if (im.width() < 1 || im.height() < 1) reject('Image has no size');
 
             // Detect face, draw a green rectangle and save image
             im.detectObject(cv.FACE_CASCADE, {}, function(err, faces) {
 
-            if (err) throw err;
+            if (err) reject(err);
         
             for (var i = 0; i < faces.length; i++) {
                 var face = faces[i];
@@ -104,6 +104,7 @@ function detect(file) {
             }
 
             const ims = im.save('./files/Face/Downloads/'+ file.name);
+            resolve(ims);
             });
         
         });

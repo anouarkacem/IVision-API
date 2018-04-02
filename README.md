@@ -12,7 +12,7 @@ Please follow these instructions to run the project on your local machine or you
 * MongoDB
 * Docker & docker-compose (optional)
 
-## Installation
+### Installation
 
 * cd VisionAPI/
 * docker-compose up -d --build

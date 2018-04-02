@@ -15,25 +15,5 @@ Please follow these instructions to run the project on your local machine or you
 ### Installation
 
 * cd VisionAPI/
-* docker-compose up -d --build
+* docker-compose up -d --build or npm install
 * localhost:3000/explorer
-
-or
-
-* Install Loopback CLI
-
-```
-npm install -g loopback-cli
-```
-
-* Install Strongloop
-
-```
-npm install -g strongloop
-```
-
-* cd VisionAPI/
-
-```
-npm install
-```

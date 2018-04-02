@@ -32,7 +32,7 @@ npm install -g loopback-cli
 npm install -g strongloop
 ```
 
-3. cd VisionAPI/
+* cd VisionAPI/
 
 ```
 npm install
